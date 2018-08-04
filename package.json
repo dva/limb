@@ -1,0 +1,9 @@
+{
+  "name": "limb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:dva/limb.git",
+  "author": "humans",
+  "license": "MIT",
+  "private": true
+}
