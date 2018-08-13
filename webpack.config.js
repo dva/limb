@@ -29,6 +29,7 @@ module.exports = {
     port: 3000,
     publicPath: 'http://localhost:3000/dist/',
     hotOnly: true,
+    compress: true,
   },
   devtool: 'eval',
   plugins: [new webpack.HotModuleReplacementPlugin()],
