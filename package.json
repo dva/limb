@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "webpack --mode production  --progress",
     "serve": "webpack-dev-server --mode development --progress",
     "lint": "eslint ./",
     "lint:fix": "eslint --fix ./"
