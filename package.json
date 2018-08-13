@@ -1,13 +1,13 @@
 {
   "name": "limb",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@bitbucket.org:dva/limb.git",
   "author": "humans",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "serve": "webpack-dev-server --mode development --open"
+    "build": "webpack --mode production",
+    "serve": "webpack-dev-server --mode development"
   },
   "dependencies": {
     "react": "^16.4.2",
