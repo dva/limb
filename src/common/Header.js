@@ -9,5 +9,8 @@ export default () => (
     <li>
       <Link to="/about">About</Link>
     </li>
+    <li>
+      <Link to="/foo/bar">404</Link>
+    </li>
   </ul>
 );
