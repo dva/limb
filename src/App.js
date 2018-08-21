@@ -1,15 +1,12 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
-import Home from './component/Home';
-import About from './component/About';
+
+import Route from './Route';
 
 import './styles/App.scss';
 
 const App = () => (
-  <React.Fragment>
-    <Home />
-    <About />
-  </React.Fragment>
+  <Route />
 );
 
 export default hot(module)(App);
