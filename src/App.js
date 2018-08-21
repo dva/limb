@@ -1,11 +1,15 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
-import './App.scss';
+import Home from './component/Home';
+import About from './component/About';
+
+import './styles/App.scss';
 
 const App = () => (
-  <div>
-    Hello World!
-  </div>
+  <React.Fragment>
+    <Home />
+    <About />
+  </React.Fragment>
 );
 
 export default hot(module)(App);
