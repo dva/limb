@@ -1,4 +1,5 @@
 const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 module.exports = {
@@ -25,5 +26,8 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'bundle.js',
   },
-  plugins: [new LodashModuleReplacementPlugin()],
+  plugins: [
+    new CleanWebpackPlugin(['dist']),
+    new LodashModuleReplacementPlugin(),
+  ],
 };
