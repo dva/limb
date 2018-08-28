@@ -9,7 +9,7 @@ const NotFound = ({ location }) => (
 );
 
 NotFound.propTypes = {
-  location: PropTypes.string,
+  location: PropTypes.shape({}),
 };
 
 NotFound.defaultProps = {
