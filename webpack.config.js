@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = {
   entry: ['./src/index.js', './src/styles/index.scss'],
@@ -30,10 +29,9 @@ module.exports = {
     contentBase: path.join(__dirname, 'public/'),
     port: 3000,
     publicPath: 'http://localhost:3000/dist/',
-    hot: true,
+    historyApiFallback: true,
     compress: true,
     overlay: true,
   },
   devtool: 'eval', // TODO use 'source-map' on static build
-  plugins: [new webpack.HotModuleReplacementPlugin()],
 };

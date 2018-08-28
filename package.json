@@ -8,7 +8,7 @@
   "scripts": {
     "analyze": "source-map-explorer dist/bundle.*",
     "build": "webpack --mode production --progress",
-    "serve": "webpack-dev-server --mode development --progress",
+    "serve": "webpack-dev-server --mode development --hot --progress",
     "lint:js": "eslint ./",
     "lint:js:fix": "yarn lint:js --fix",
     "lint:css": "stylelint '**/*.scss'",

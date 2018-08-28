@@ -1,9 +1,11 @@
 import React from 'react';
-import { hot } from 'react-hot-loader';
+import { hot, setConfig } from 'react-hot-loader';
 
 import Route from './Route';
 
 import './styles/App.scss';
+
+setConfig({ logLevel: 'debug' });
 
 const App = () => (
   <Route />
