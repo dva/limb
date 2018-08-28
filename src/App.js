@@ -10,7 +10,12 @@ import './styles/App.scss';
 
 setConfig({ logLevel: 'debug' });
 
-debug.log(`%cinfo: ${DateTime.utc().toLocal()}`, 'background: #222; color: #bada55');
+const prod = process.env.NODE_ENV === 'production';
+
+debug.log(!prod
+  ? `%cDEVELOPMENT%c build: ${DateTime.utc().toLocal()}`
+  : '%cPRODUCTION%c mode', 'background: #222; color: #bada55', 'color: #222');
+
 debug.log(_.defaults({ foo: 1 }, { foo: 3, bar: 2 }));
 
 const App = () => (
