@@ -34,6 +34,6 @@ module.exports = {
     compress: true,
     overlay: true,
   },
-  devtool: 'eval',
+  devtool: 'eval', // TODO use 'source-map' on static build
   plugins: [new webpack.HotModuleReplacementPlugin()],
 };

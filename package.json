@@ -6,7 +6,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "webpack --mode production  --progress",
+    "analyze": "source-map-explorer dist/bundle.*",
+    "build": "webpack --mode production --progress",
     "serve": "webpack-dev-server --mode development --progress",
     "lint:js": "eslint ./",
     "lint:js:fix": "yarn lint:js --fix",
@@ -36,6 +37,7 @@
     "eslint-plugin-react": "^7.11.0",
     "node-sass": "^4.9.3",
     "sass-loader": "^7.1.0",
+    "source-map-explorer": "^1.6.0",
     "style-loader": "^0.23.0",
     "stylelint": "^9.4.0",
     "stylelint-config-standard": "^18.2.0",
