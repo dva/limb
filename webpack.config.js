@@ -1,4 +1,5 @@
 const path = require('path');
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 module.exports = {
   entry: ['./src/index.js', './src/styles/index.scss'],
@@ -34,4 +35,5 @@ module.exports = {
     overlay: true,
   },
   devtool: 'eval', // TODO use 'source-map' on static build
+  plugins: [new LodashModuleReplacementPlugin()],
 };
