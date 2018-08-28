@@ -8,3 +8,4 @@ pipelines:
         script:
           - yarn
           - yarn lint
+          - yarn build
