@@ -1,0 +1,10 @@
+image: node:slim
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - node
+        script:
+          - yarn
+          - yarn lint
