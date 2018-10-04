@@ -13,8 +13,8 @@ setConfig({ logLevel: 'debug' });
 const prod = process.env.NODE_ENV === 'production';
 
 debug.log(!prod
-  ? `%cDEVELOPMENT%c build: ${DateTime.utc().toLocal()}`
-  : '%cPRODUCTION%c mode', 'background: #222; color: #bada55', 'color: #222');
+  ? `%cDEVELOPMENT%c version: ${DateTime.utc().toLocal()}`
+  : '%cPRODUCTION%c build.', 'background: #222; color: #bada55', 'color: inherit');
 
 debug.log(_.defaults({ foo: 1 }, { foo: 3, bar: 2 }));
 
