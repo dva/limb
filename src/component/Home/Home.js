@@ -1,9 +1,13 @@
 import React from 'react';
 import style from './style';
 
+const Content = ({ value }) => (
+  <>{value}</>
+);
+
 const Home = () => (
   <div style={style}>
-    Hello World!
+    <Content value="hi" />
   </div>
 );
 
