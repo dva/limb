@@ -7,9 +7,9 @@ module.exports = merge(common, {
   devServer: {
     contentBase: path.join(__dirname, 'public/'),
     port: 3000,
-    publicPath: 'http://localhost:3000/dist/',
+    publicPath: '/dist/',
     historyApiFallback: true,
-    compress: true,
+    compress: false,
     overlay: true,
   },
   devtool: 'inline-source-map', // Use 'eval' for best build performance
