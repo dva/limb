@@ -9,7 +9,7 @@ module.exports = merge(common, {
     port: 3000,
     publicPath: '/',
     historyApiFallback: true,
-    compress: true,
+    compress: false,
     overlay: true,
   },
   devtool: 'inline-source-map', // Use 'eval' for best build performance
