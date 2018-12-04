@@ -17,7 +17,8 @@
     "lint": "yarn lint:js && yarn lint:css",
     "lint:fix": "yarn lint:js:fix && yarn lint:css:fix",
     "type-check": "tsc",
-    "type-check:watch": "yarn type-check -- --watch"
+    "type-check:watch": "yarn type-check -- --watch",
+    "browserslist": "npx browserslist"
   },
   "dependencies": {
     "@types/debug": "^0.0.31",
