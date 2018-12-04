@@ -9,6 +9,7 @@
     "analyze": "source-map-explorer dist/bundle.*",
     "build": "webpack --config webpack.prod.js",
     "serve": "webpack-dev-server --config webpack.dev.js --hot",
+    "serve:debug": "DEBUG=* yarn serve",
     "lint:js": "eslint ./",
     "lint:js:fix": "yarn lint:js --fix",
     "lint:css": "stylelint '**/*.scss'",
