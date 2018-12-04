@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const NotFound = ({ location }) => (
+const NotFound = ({ location }: { location: Location }) => (
   <div>
     No match for:&nbsp;
     <code>{location.pathname}</code>

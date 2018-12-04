@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './style';
 
-const Content = ({ value }) => (
+const Content = ({ value }: { value: string }) => (
   <>{value}</>
 );
 
