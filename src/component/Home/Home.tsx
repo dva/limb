@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { SFC } from 'react';
 import style from './style';
 
-const Content = ({ value }: { value: string }) => (
+interface IContentProps {
+  value: string;
+}
+
+const Content: SFC<IContentProps> = ({ value }) => (
   <>{value}</>
 );
 

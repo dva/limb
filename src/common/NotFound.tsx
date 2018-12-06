@@ -1,19 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { SFC } from 'react';
 
-const NotFound = ({ location }: { location: Location }) => (
+interface INotFound {
+  location: Location;
+}
+
+const NotFound: SFC<INotFound> = ({ location }) => (
   <div>
     No match for:&nbsp;
     <code>{location.pathname}</code>
   </div>
 );
-
-NotFound.propTypes = {
-  location: PropTypes.shape({}),
-};
-
-NotFound.defaultProps = {
-  location: '',
-};
 
 export default NotFound;
