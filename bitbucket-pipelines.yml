@@ -8,5 +8,5 @@ pipelines:
         script:
           - yarn
           - yarn type-check
-          # - yarn lint
+          - yarn lint
           - yarn build

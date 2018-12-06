@@ -7,7 +7,7 @@ const Content = ({ value }: { value: string }) => (
 
 const Home = () => (
   <div style={style}>
-    <Content value="hi" />
+    <Content value='hi' />
   </div>
 );
 

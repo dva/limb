@@ -1,3 +1,3 @@
 export default {
-  fontWeight: "bold",
+  fontWeight: 'bold',
 } as React.CSSProperties;
