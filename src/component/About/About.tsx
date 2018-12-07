@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './style';
-import styles from './About.module.css';
+import './style.css';
 
 export default () => (
-  <div style={style} className={styles.content}>
+  <div style={style} className='content'>
     lorem ipsum
   </div>
 );
