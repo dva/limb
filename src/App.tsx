@@ -8,17 +8,17 @@ import Route from './Route';
 
 import './styles/App.scss';
 
-const log = debug('app');
+const log = debug('root');
 
-localStorage.debug = 'app';
+localStorage.debug = 'root';
 
 setConfig({ logLevel: 'debug' });
 
 const prod = process.env.NODE_ENV === 'production';
 
 log(!prod
-  ? `%cDEVELOPMENT%c version: ${DateTime.utc().toLocal()}`
-  : '%cPRODUCTION%c build.', 'background: #222; color: #bada55', 'color: inherit');
+  ? `%c[DEVELOPMENT]%c v.${DateTime.utc().toLocal()}`
+  : '%c[PRODUCTION]%c build.', 'background: #222; color: #bada55', 'color: inherit');
 
 log('test', _.defaults({ foo: 1 }, { foo: 3, bar: 2 }));
 
