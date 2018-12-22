@@ -12,8 +12,8 @@ export default () => (
     <Fragment>
       <Header />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
+        <Route exact={true} path='/' component={Home} />
+        <Route path='/about' component={About} />
         <Route component={NotFound} />
       </Switch>
     </Fragment>

@@ -1,33 +1,33 @@
-const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
+const path = require('path')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
 
 module.exports = {
-  entry: ['./src/index.js', './src/styles/index.scss'],
+  entry: ['./src/index.tsx', './src/styles/index.scss'],
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js|tsx)$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          cacheDirectory: true,
-        },
+          cacheDirectory: true
+        }
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
-      },
-    ],
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      }
+    ]
   },
-  resolve: { extensions: ['.js', '.jsx'] },
+  resolve: { extensions: ['.js', '.tsx'] },
   output: {
     path: path.resolve(__dirname, 'dist/'),
     publicPath: '/',
-    filename: 'bundle.js',
+    filename: 'bundle.js'
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new LodashModuleReplacementPlugin(),
-  ],
-};
+    new LodashModuleReplacementPlugin()
+  ]
+}

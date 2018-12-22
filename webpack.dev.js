@@ -1,6 +1,6 @@
-const path = require('path');
-const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
+const path = require('path')
+const merge = require('webpack-merge')
+const common = require('./webpack.common.js')
 
 module.exports = merge(common, {
   mode: 'development',
@@ -11,6 +11,7 @@ module.exports = merge(common, {
     historyApiFallback: true,
     compress: false,
     overlay: true,
+    disableHostCheck: true // FIXME not secure, but due to bug in latest webpack-dev-server
   },
-  devtool: 'inline-source-map', // Use 'eval' for best build performance
-});
+  devtool: 'inline-source-map' // Use 'eval' for best build performance
+})

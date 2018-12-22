@@ -7,5 +7,6 @@ pipelines:
           - node
         script:
           - yarn
+          - yarn type-check
           - yarn lint
           - yarn build
