@@ -1,6 +1,6 @@
 const path = require('path')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: ['./src/index.tsx', './src/styles/index.scss'],
@@ -23,11 +23,13 @@ module.exports = {
   resolve: { extensions: ['.js', '.tsx'] },
   output: {
     path: path.resolve(__dirname, 'dist/'),
-    publicPath: '/dist/',
+    publicPath: './',
     filename: 'bundle.js'
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
-    new LodashModuleReplacementPlugin()
+    new LodashModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    })
   ]
 }
