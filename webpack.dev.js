@@ -10,8 +10,7 @@ module.exports = merge(common, {
     publicPath: '/',
     historyApiFallback: true,
     compress: false,
-    overlay: true,
-    disableHostCheck: true // FIXME not secure, but due to bug in latest webpack-dev-server
+    overlay: true
   },
   devtool: 'inline-source-map' // Use 'eval' for best build performance
 })
