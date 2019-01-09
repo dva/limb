@@ -6,7 +6,7 @@ pipelines:
         caches:
           - node
         script:
-          - yarn
+          - yarn --frozen-lockfile
           - yarn type-check
           - yarn lint
           - yarn build
