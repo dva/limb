@@ -22,9 +22,15 @@ module.exports = {
   },
   resolve: { extensions: ['.js', '.tsx'] },
   output: {
+    filename: '[name].[hash].js',
+    chunkFilename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist/'),
-    publicPath: './',
-    filename: 'bundle.js'
+    publicPath: './'
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
   },
   plugins: [
     new LodashModuleReplacementPlugin(),
