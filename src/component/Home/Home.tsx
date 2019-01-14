@@ -1,11 +1,11 @@
-import React, { SFC } from 'react';
+import React, { FunctionComponent } from 'react';
 import style from './style';
 
 interface IContentProps {
   value: string;
 }
 
-const Content: SFC<IContentProps> = ({ value }) => (
+const Content: FunctionComponent<IContentProps> = ({ value }) => (
   <>{value}</>
 );
 
