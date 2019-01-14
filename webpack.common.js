@@ -25,7 +25,7 @@ module.exports = {
     filename: '[name].[hash].js',
     chunkFilename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist/'),
-    publicPath: './'
+    publicPath: '/'
   },
   optimization: {
     splitChunks: {
