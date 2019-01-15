@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import { useState } from 'react';
 
 function Example() {
@@ -17,6 +17,6 @@ function Example() {
       </button>
     </div>
   );
-};
+}
 
 export default Example;

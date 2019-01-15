@@ -10,6 +10,9 @@ export default () => (
       <Link to='/about'>About</Link>
     </li>
     <li>
+      <Link to='/hooks'>Hooks</Link>
+    </li>
+    <li>
       <Link to='/foo/bar'>404</Link>
     </li>
   </ul>
