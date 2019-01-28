@@ -1,8 +1,15 @@
 import React from 'react';
-import style from './style';
+import styled from 'styled-components';
+import { ellipsis } from 'polished';
+
+const Styled = styled.div`
+  ${ellipsis('100px')};
+`;
 
 export default () => (
-  <div style={style}>
-    lorem ipsum
+  <div>
+    <Styled>
+      Lorem ipsum dolor sit amet
+    </Styled>
   </div>
 );

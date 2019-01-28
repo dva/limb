@@ -8,6 +8,8 @@
     "@babel/proposal-class-properties",
     "@babel/proposal-object-rest-spread",
     "@babel/syntax-dynamic-import",
+    "babel-plugin-styled-components",
+    "polished",
     "lodash",
     "react-hot-loader/babel"
   ]
