@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "chenxsan.vscode-standardjs",
+    "editorconfig.editorconfig",
+    "eg2.tslint",
+    "jpoissonnier.vscode-styled-components",
+    "shinnn.stylelint"
+  ]
+}
