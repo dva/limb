@@ -1,16 +1,14 @@
 {
   "defaultSeverity": "error",
   "extends": [
-    "tslint:recommended",
+    "tslint:latest",
     "tslint-react"
   ],
-  "jsRules": {},
   "rules": {
-    "quotemark": [true, "single"],
-    "ordered-imports": [false]
-  },
-  "rulesDirectory": [],
-  "linterOptions": {
-    "exclude": ["**/node_modules/**"]
+    "no-console": {
+      "severity": "warning"
+    },
+    "ordered-imports": [false],
+    "quotemark": [true, "single"]
   }
 }
