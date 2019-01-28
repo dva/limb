@@ -1,19 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+interface IItem {
+  title: string;
+  route: string;
+}
+
+const menu = [
+  { title: 'Home', route: '/' },
+  { title: 'About', route: '/about' },
+  { title: 'Hooks', route: '/hooks' },
+  { title: '404', route: '/foo/bar' },
+];
+
+const menuItem = (item: IItem, idx: number) => (
+  <li key={idx}>
+    <Link to={item.route}>{item.title}</Link>
+  </li>
+);
+
 export default () => (
   <ul>
-    <li>
-      <Link to='/'>Home</Link>
-    </li>
-    <li>
-      <Link to='/about'>About</Link>
-    </li>
-    <li>
-      <Link to='/hooks'>Hooks</Link>
-    </li>
-    <li>
-      <Link to='/foo/bar'>404</Link>
-    </li>
+    {menu.map((item, idx) => menuItem(item, idx))}
   </ul>
 );
