@@ -8,6 +8,7 @@
     "no-console": {
       "severity": "warning"
     },
+    "no-unused-variable": true,
     "ordered-imports": [false],
     "quotemark": [true, "single"]
   }
