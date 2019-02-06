@@ -8,6 +8,7 @@
     "@babel/proposal-class-properties",
     "@babel/proposal-object-rest-spread",
     "@babel/syntax-dynamic-import",
+    "@babel/transform-runtime",
     "babel-plugin-styled-components",
     "polished",
     "lodash",
