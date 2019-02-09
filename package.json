@@ -78,5 +78,10 @@
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.6",
     "webpack-merge": "^4.2.1"
+  },
+  "standard": {
+    "ignore": [
+      "/.yarn/"
+    ]
   }
 }
