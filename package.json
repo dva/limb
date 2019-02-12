@@ -20,6 +20,7 @@
     "lint:css:fix": "yarn lint:css --fix",
     "lint": "yarn lint:ts && yarn lint:js && yarn lint:css",
     "lint:fix": "yarn lint:ts:fix && yarn lint:js:fix && yarn lint:css:fix",
+    "prettier": "prettier --write src/**/*.tsx",
     "type-check": "tsc",
     "type-check:watch": "yarn type-check --watch",
     "browserslist": "npx browserslist"
