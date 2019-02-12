@@ -2,6 +2,7 @@
   "recommendations": [
     "chenxsan.vscode-standardjs",
     "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
     "jpoissonnier.vscode-styled-components",
     "ms-vscode.vscode-typescript-tslint-plugin",
     "shinnn.stylelint"
