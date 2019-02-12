@@ -15,6 +15,7 @@
     "lint:js:fix": "yarn lint:js --fix",
     "lint:ts": "tslint -p ./tsconfig.json -c ./tslint.json",
     "lint:ts:fix": "yarn lint:ts --fix",
+    "lint:ts:check": "tslint-config-prettier-check ./tslint.json",
     "lint:css": "stylelint 'src/**/*.scss'",
     "lint:css:fix": "yarn lint:css --fix",
     "lint": "yarn lint:ts && yarn lint:js && yarn lint:css",
