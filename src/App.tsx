@@ -10,7 +10,7 @@ import './styles/App.scss';
 
 const log = debug('root');
 
-localStorage.debug = 'root';
+localStorage.setItem('debug', 'root');
 
 setConfig({ logLevel: 'debug' });
 

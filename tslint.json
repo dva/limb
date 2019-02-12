@@ -2,18 +2,15 @@
   "defaultSeverity": "error",
   "extends": [
     "tslint:latest",
-    "tslint-react"
+    "tslint-react",
+    "tslint-eslint-rules",
+    "tslint-config-prettier"
   ],
-  "jsRules": {},
   "rules": {
     "no-console": {
       "severity": "warning"
     },
-    "ordered-imports": [false],
-    "quotemark": [true, "single"]
-  },
-  "rulesDirectory": [],
-  "linterOptions": {
-    "exclude": ["**/node_modules/**"]
+    "no-unused-variable": true,
+    "ordered-imports": [false]
   }
 }
