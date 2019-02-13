@@ -1,16 +1,17 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "moduleResolution": "node",
-    "module": "esnext",
     "allowJs": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
     "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strict": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "jsx": "react"
+    "target": "esnext",
+    "types": ["node"]
   },
   "include": [
     "src/**/*.tsx"
