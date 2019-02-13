@@ -10,3 +10,7 @@ RUN yarn audit
 RUN yarn type-check
 RUN yarn lint
 RUN yarn build
+
+EXPOSE 3001
+
+CMD ["npx", "serve", "-s", "./dist", "-p", "3001"]
