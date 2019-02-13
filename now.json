@@ -3,5 +3,8 @@
   "name": "limb",
   "builds": [
     { "src": "package.json", "use": "@now/static-build" }
+  ],
+  "routes": [
+    {"src": "^/(.*)", "headers": {"cache-control": "s-maxage=0"}, "dest": "/index.html"}
   ]
 }
