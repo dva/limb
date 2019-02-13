@@ -1,5 +1,6 @@
 const merge = require('webpack-merge')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const SizePlugin = require('size-plugin')
 
 const common = require('./webpack.common.js')
 
@@ -13,6 +14,7 @@ module.exports = merge(common, {
     }
   },
   plugins: [
-    new CleanWebpackPlugin(['dist'])
+    new CleanWebpackPlugin(['dist']),
+    new SizePlugin()
   ]
 })
