@@ -6,8 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "analyze:app": "source-map-explorer dist/main.*",
-    "analyze:vendors": "source-map-explorer dist/vendors~main.*",
+    "analyze": "source-map-explorer 'dist/*.{js,js.map}'",
     "browserslist": "npx browserslist",
     "build": "webpack --config webpack.prod.js",
     "lint:css:fix": "yarn lint:css --fix",
