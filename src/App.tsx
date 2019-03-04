@@ -1,5 +1,4 @@
 import React from 'react';
-import { hot } from 'react-hot-loader/root'; // tslint:disable-line:no-submodule-imports
 import { DateTime } from 'luxon';
 import _ from 'lodash';
 
@@ -7,6 +6,9 @@ import Route from './Route';
 import log from './utils/log';
 
 import './styles/App.scss';
+
+// tslint:disable-next-line:no-submodule-imports
+import { hot } from 'react-hot-loader/root'; // SHOULD BE THE LAST IMPORTed! -> http://bit.ly/2SJysOK
 
 localStorage.setItem('debug', 'app:*');
 
