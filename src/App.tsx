@@ -1,29 +1,25 @@
 import React from 'react';
-import { hot, setConfig } from 'react-hot-loader';
 import { DateTime } from 'luxon';
 import _ from 'lodash';
-import debug from 'debug';
 
 import Route from './Route';
+import log from './utils/log';
 
 import './styles/App.scss';
 
-const log = debug('root');
+// tslint:disable-next-line:no-submodule-imports
+import { hot } from 'react-hot-loader/root'; // SHOULD BE THE LAST IMPORTed! -> http://bit.ly/2SJysOK
 
-localStorage.setItem('debug', 'root');
-
-setConfig({ logLevel: 'debug' });
+localStorage.setItem('debug', 'app:*');
 
 const prod = process.env.NODE_ENV === 'production';
-
-log(!prod
+const mode = !prod
   ? `%c[DEVELOPMENT]%c v.${DateTime.utc().toLocal()}`
-  : '%c[PRODUCTION]%c build.', 'background: #222; color: #bada55', 'color: inherit');
+  : '%c[PRODUCTION]%c build.';
 
+log('root', mode, 'background: #222; color: #bada55', 'color: inherit');
 log('test', _.defaults({ foo: 1 }, { foo: 3, bar: 2 }));
 
-const App = () => (
-  <Route />
-);
+const App = () => <Route />;
 
-export default hot(module)(App);
+export default hot(App);
