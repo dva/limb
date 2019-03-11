@@ -19,6 +19,7 @@
     "lint:ts:fix": "yarn lint:ts --fix",
     "lint:ts": "tslint -p ./tsconfig.json -c ./tslint.json",
     "lint": "yarn lint:ts && yarn lint:js && yarn lint:css",
+    "now-build": "yarn build",
     "pretty": "prettier --write 'src/**/*.{tsx,ts}'",
     "serve:debug": "DEBUG=* yarn serve",
     "serve": "webpack-dev-server --config webpack.dev.js --hot",
