@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { log } from 'utils';
 
 function Example() {
   // Declare a new state variable, which we'll call "count"
@@ -6,7 +7,7 @@ function Example() {
 
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
-    console.log(`You clicked ${count} times`);
+    log('hooks', `You clicked ${count} times`);
   }, [count]);
 
   const handleClick = () => {
@@ -16,9 +17,7 @@ function Example() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={handleClick}>
-        Click me
-      </button>
+      <button onClick={handleClick}>Click me</button>
     </div>
   );
 }
