@@ -7,7 +7,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|tsx)$/,
+        test: /\.(js|ts|tsx)$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
@@ -20,7 +20,7 @@ module.exports = {
       }
     ]
   },
-  resolve: { extensions: ['.js', '.tsx'] },
+  resolve: { extensions: ['.js', '.ts', '.tsx'] },
   output: {
     filename: '[name].[hash].js',
     chunkFilename: '[name].[hash].js',
