@@ -20,7 +20,12 @@ module.exports = {
       }
     ]
   },
-  resolve: { extensions: ['.js', '.ts', '.tsx'] },
+  resolve: {
+    alias: {
+      utils: path.resolve(__dirname, 'src/utils')
+    },
+    extensions: ['.js', '.ts', '.tsx']
+  },
   output: {
     filename: '[name].[hash].js',
     chunkFilename: '[name].[hash].js',
