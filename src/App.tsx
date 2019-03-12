@@ -3,7 +3,7 @@ import { DateTime } from 'luxon';
 import _ from 'lodash';
 
 import Route from './Route';
-import log from './utils/log';
+import { log } from 'utils';
 
 import './styles/App.scss';
 
