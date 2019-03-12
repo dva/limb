@@ -8,9 +8,11 @@
     "tslint-config-prettier"
   ],
   "rules": {
-    "no-console": {
-      "severity": "warning"
-    },
+    "no-console": [
+      true,
+      "log"
+    ],
+    "no-implicit-dependencies": [true, ["utils"]],
     "no-unused-variable": true,
     "ordered-imports": [false]
   }
