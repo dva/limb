@@ -30,7 +30,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.3.1",
-    "@types/clean-webpack-plugin": "^0.1.2",
     "@types/debug": "^4.1.0",
     "@types/lodash": "^4.14.118",
     "@types/luxon": "^1.4.1",
