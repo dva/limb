@@ -12,16 +12,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "paths": {
-      "utils": [
-        "src/utils"
-      ]
+      "utils": ["src/utils"]
     },
     "strict": true,
     "target": "esnext",
-    "types": ["node"]
+    "types": ["node", "jest"]
   },
-  "include": [
-    "src/**/*.tsx",
-    "src/**/*.ts"
-  ]
+  "include": ["src/**/*.tsx", "src/**/*.ts"]
 }
