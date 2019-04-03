@@ -22,7 +22,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      utils: path.resolve(__dirname, 'src/utils')
+      '@utils': path.resolve(__dirname, 'src/utils')
     },
     extensions: ['.js', '.ts', '.tsx']
   },
