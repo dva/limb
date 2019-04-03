@@ -2,7 +2,7 @@ const merge = require('webpack-merge')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const SizePlugin = require('size-plugin')
 
-const common = require('./webpack.common.js')
+const common = require('./webpack.common')
 
 module.exports = merge(common, {
   mode: 'production',
@@ -13,8 +13,5 @@ module.exports = merge(common, {
       // maxSize: 250000 // Try to split chunks bigger than size
     }
   },
-  plugins: [
-    new CleanWebpackPlugin(),
-    new SizePlugin()
-  ]
+  plugins: [new CleanWebpackPlugin(), new SizePlugin()]
 })
