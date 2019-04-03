@@ -12,7 +12,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "paths": {
-      "utils": ["src/utils"]
+      "@utils": ["src/utils"]
     },
     "strict": true,
     "target": "esnext",
