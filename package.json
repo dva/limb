@@ -8,7 +8,7 @@
   "scripts": {
     "analyze": "source-map-explorer 'dist/*.{js,js.map}'",
     "browserslist": "npx browserslist",
-    "build:check": "yarn type-check && yarn lint",
+    "build:check": "yarn type-check && yarn lint && yarn test",
     "build": "webpack --config webpack.prod.js",
     "lint:css:fix": "yarn lint:css --fix",
     "lint:css": "stylelint 'src/**/*.scss'",
