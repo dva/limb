@@ -1,3 +1,3 @@
 export default {
-  zoom: '120%',
+  zoom: '120%'
 };
