@@ -8,11 +8,8 @@
     "tslint-config-prettier"
   ],
   "rules": {
-    "no-console": [
-      true,
-      "log"
-    ],
-    "no-implicit-dependencies": [true, ["utils"]],
+    "no-console": [true, "log"],
+    "no-implicit-dependencies": [true, "dev", ["@utils"]],
     "no-unused-variable": true,
     "ordered-imports": [false]
   }

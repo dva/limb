@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { log } from 'utils';
+import { log } from '@utils';
 
 function Example() {
   // Declare a new state variable, which we'll call "count"
