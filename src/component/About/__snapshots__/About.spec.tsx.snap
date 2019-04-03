@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`About should render without throwing an error 1`] = `ShallowWrapper {}`;
+exports[`About should render without throwing an error 1`] = `
+<div>
+  <styled.div>
+    Lorem ipsum dolor sit amet
+  </styled.div>
+</div>
+`;
