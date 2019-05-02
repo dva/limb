@@ -1,13 +1,11 @@
-import React, { FunctionComponent } from 'react';
+import React, { FC } from 'react';
 import style from './style';
 
 interface IContentProps {
   value: string;
 }
 
-const Content: FunctionComponent<IContentProps> = ({ value }) => (
-  <>{value}</>
-);
+const Content: FC<IContentProps> = ({ value }) => <>{value}</>;
 
 const Home = () => (
   <div style={style}>
