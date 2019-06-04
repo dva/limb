@@ -1,4 +1,5 @@
 const path = require('path')
+const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
@@ -33,6 +34,7 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
+    new CaseSensitivePathsPlugin(),
     new LodashModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html'
