@@ -9,7 +9,7 @@
     "analyze": "source-map-explorer 'dist/*.{js,js.map}'",
     "browserslist": "npx browserslist",
     "build:check": "yarn type-check && yarn lint && yarn test && yarn build",
-    "build": "webpack --progress --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js",
     "lint:css:fix": "yarn lint:css --fix",
     "lint:css": "stylelint 'src/**/*.scss'",
     "lint:fix": "yarn lint:ts:fix && yarn lint:js:fix && yarn lint:css:fix",
@@ -22,7 +22,7 @@
     "pretty:js": "prettier-standard '**/*.js'",
     "pretty:ts": "prettier --write 'src/**/*.{tsx,ts}'",
     "serve:debug": "DEBUG=* yarn serve",
-    "serve": "webpack-dev-server --progress --config webpack.dev.js --hot",
+    "serve": "webpack-dev-server --config webpack.dev.js --hot",
     "test:updateSnapshot": "yarn test -u",
     "test": "jest",
     "type-check:check": "yarn type-check --listFiles",
@@ -42,6 +42,7 @@
     "@types/styled-components": "^4.1.16",
     "@types/webpack": "^4.4.34",
     "@types/webpack-merge": "^4.1.5",
+    "@types/webpackbar": "^2.6.0",
     "debug": "^4.0.1",
     "lodash": "^4.17.10",
     "luxon": "^1.16.0",
@@ -103,6 +104,7 @@
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2",
-    "webpack-merge": "^4.2.1"
+    "webpack-merge": "^4.2.1",
+    "webpackbar": "^3.2.0"
   }
 }

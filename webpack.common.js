@@ -2,6 +2,7 @@ const path = require('path')
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const WebpackBar = require('webpackbar')
 
 module.exports = {
   entry: ['./src/index.tsx', './src/styles/index.scss'],
@@ -34,6 +35,7 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
+    new WebpackBar(),
     new CaseSensitivePathsPlugin(),
     new LodashModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
