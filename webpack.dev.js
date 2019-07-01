@@ -10,7 +10,14 @@ module.exports = merge(common, {
     publicPath: '/',
     historyApiFallback: true,
     compress: false,
-    overlay: true
+    overlay: true,
+    stats: {
+      assets: false,
+      children: false,
+      chunks: false,
+      modules: false,
+      version: false
+    }
   },
   devtool: 'inline-source-map' // Use 'eval' for best build performance
 })
