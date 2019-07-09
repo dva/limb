@@ -24,6 +24,7 @@ module.exports = {
   },
   resolve: {
     alias: {
+      'react-dom': '@hot-loader/react-dom',
       '@utils': path.resolve(__dirname, 'src/utils')
     },
     extensions: ['.js', '.ts', '.tsx']
