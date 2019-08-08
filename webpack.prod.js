@@ -11,6 +11,9 @@ module.exports = merge(common, {
     splitChunks: {
       chunks: 'all'
       // maxSize: 250000 // Try to split chunks bigger than size
+    },
+    runtimeChunk: {
+      name: 'runtime'
     }
   },
   plugins: [new CleanWebpackPlugin(), new SizePlugin()]
