@@ -4,6 +4,7 @@ const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackBar = require('webpackbar')
+const PreloadWebpackPlugin = require('preload-webpack-plugin')
 
 module.exports = {
   entry: ['./src/index.tsx', './src/styles/index.scss'],
@@ -42,6 +43,9 @@ module.exports = {
     new LodashModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html'
+    }),
+    new PreloadWebpackPlugin({
+      include: 'initial'
     })
   ]
 }
