@@ -1,3 +1,4 @@
+// @ts-check
 const path = require('path')
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
