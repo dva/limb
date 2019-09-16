@@ -1,3 +1,7 @@
 {
+  "search.exclude": {
+    ".idea": true,
+    ".yarn": true
+  },
   "typescript.tsdk": "node_modules/typescript/lib"
 }
