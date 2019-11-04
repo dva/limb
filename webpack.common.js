@@ -4,6 +4,7 @@ const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackBar = require('webpackbar')
+const CopyPlugin = require('copy-webpack-plugin')
 const PreloadWebpackPlugin = require('preload-webpack-plugin')
 
 module.exports = {
@@ -44,6 +45,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html'
     }),
+    new CopyPlugin([{ from: 'public', to: '.' }]),
     new PreloadWebpackPlugin({
       include: 'initial'
     })
