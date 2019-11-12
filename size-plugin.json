@@ -1,24 +1,24 @@
 [
   {
-    "timestamp": 1571855902354,
+    "timestamp": 1573753576034,
     "files": [
       {
         "filename": "main.********************.js",
         "previous": 0,
-        "size": 2074,
-        "diff": 2074
+        "size": 1983,
+        "diff": 1983
       },
       {
         "filename": "runtime.********************.js",
         "previous": 0,
-        "size": 775,
-        "diff": 775
+        "size": 773,
+        "diff": 773
       },
       {
         "filename": "vendors~main.********************.js",
         "previous": 0,
-        "size": 91117,
-        "diff": 91117
+        "size": 90917,
+        "diff": 90917
       },
       { "filename": "index.html", "previous": 0, "size": 354, "diff": 354 }
     ]
