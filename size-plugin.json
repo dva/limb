@@ -1,12 +1,12 @@
 [
   {
-    "timestamp": 1571855902354,
+    "timestamp": 1573587423019,
     "files": [
       {
         "filename": "main.********************.js",
         "previous": 0,
-        "size": 2074,
-        "diff": 2074
+        "size": 2139,
+        "diff": 2139
       },
       {
         "filename": "runtime.********************.js",
@@ -17,10 +17,23 @@
       {
         "filename": "vendors~main.********************.js",
         "previous": 0,
-        "size": 91117,
-        "diff": 91117
+        "size": 90913,
+        "diff": 90913
       },
-      { "filename": "index.html", "previous": 0, "size": 354, "diff": 354 }
+      { "filename": "index.html", "previous": 0, "size": 411, "diff": 411 },
+      { "filename": "404.html", "previous": 0, "size": 550, "diff": 550 },
+      {
+        "filename": "precache-manifest.5b9ee2acea37a569ef45c336c7377dc8.js",
+        "previous": 0,
+        "size": 318,
+        "diff": 318
+      },
+      {
+        "filename": "service-worker.js",
+        "previous": 0,
+        "size": 523,
+        "diff": 523
+      }
     ]
   }
 ]

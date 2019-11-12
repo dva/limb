@@ -7,7 +7,6 @@
   "private": true,
   "scripts": {
     "analyze": "source-map-explorer 'dist/*.{js,js.map}'",
-    "browserslist": "npx browserslist",
     "build:check": "yarn type-check && yarn lint && yarn test",
     "build": "webpack --config webpack.prod.js",
     "lint:css:fix": "yarn lint:css --fix",
@@ -62,7 +61,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.6.2",
-    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-modules": "^0.1.0",
     "@babel/preset-react": "^7.7.0",
     "@babel/preset-typescript": "^7.7.2",
     "@types/enzyme": "^3.10.3",
