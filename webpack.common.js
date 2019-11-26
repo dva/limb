@@ -4,7 +4,9 @@ const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackBar = require('webpackbar')
+const CopyPlugin = require('copy-webpack-plugin')
 const PreloadWebpackPlugin = require('preload-webpack-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = {
   entry: ['./src/index.tsx', './src/styles/index.scss'],
@@ -43,6 +45,13 @@ module.exports = {
     new LodashModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html'
+    }),
+    new CopyPlugin([{ from: 'public', to: '.' }]),
+    new WorkboxPlugin.GenerateSW({
+      // these options encourage the ServiceWorkers to get in there fast
+      // and not allow any straggling "old" SWs to hang around
+      clientsClaim: true,
+      skipWaiting: true
     }),
     new PreloadWebpackPlugin({
       include: 'initial'
