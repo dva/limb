@@ -5,9 +5,7 @@
     "esbenp.prettier-vscode",
     "jpoissonnier.vscode-styled-components",
     "ms-vscode.vscode-typescript-tslint-plugin",
-    "shinnn.stylelint"
+    "thibaudcolas.stylelint"
   ],
-  "unwantedRecommendations": [
-    "eg2.tslint"
-  ]
+  "unwantedRecommendations": ["eg2.tslint"]
 }
