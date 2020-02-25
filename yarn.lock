@@ -8153,6 +8153,7 @@ fsevents@^2.1.2:
     react: ^16.12.0
     react-dom: ^16.12.0
     react-hot-loader: ^4.12.19
+    react-is: ^16.12.0
     react-router-dom: ^5.1.2
     sanitize.css: ^11.0.0
     sass-loader: ^8.0.2
