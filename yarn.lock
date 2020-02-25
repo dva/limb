@@ -8077,6 +8077,7 @@ fsevents@^2.1.2:
     lodash-webpack-plugin: ^0.11.5
     luxon: ^1.22.0
     node-sass: ^4.13.1
+    pnp-webpack-plugin: ^1.6.4
     polished: ^3.4.4
     preload-webpack-plugin: ^3.0.0-beta.4
     prettier: 1.19.1
@@ -10320,6 +10321,15 @@ fsevents@^2.1.2:
   version: 1.1.0
   resolution: "pn@npm:1.1.0"
   checksum: 2/7df19be13c86dfab22e8484590480e49d496b270430a731be0bb40cea8a16c29e45188a7303d7c57b7140754f807877b0c10aa95400ad30a7ad4fb3f7d132381
+  languageName: node
+  linkType: hard
+
+"pnp-webpack-plugin@npm:^1.6.4":
+  version: 1.6.4
+  resolution: "pnp-webpack-plugin@npm:1.6.4"
+  dependencies:
+    ts-pnp: ^1.1.6
+  checksum: 2/39a484182f8fc08cb1420d4a5ccf16457c6498a4546bfbad9e00df7238ba7d98796e9aa6f82a4e803a627860409ffed491a55c5a1384e09bed60cefeb618586d
   languageName: node
   linkType: hard
 
@@ -13561,6 +13571,18 @@ resolve@1.12.0:
   bin:
     ts-jest: cli.js
   checksum: 2/dcd5639f38c52acef8206f640c6659e265aaa3b791969bb5e79ef7fd73b3a18ddf47829f8314efea31744ffab5b8b3591b0417f332e66c229b6930d4d80cdad0
+  languageName: node
+  linkType: hard
+
+"ts-pnp@npm:^1.1.6":
+  version: 1.1.6
+  resolution: "ts-pnp@npm:1.1.6"
+  peerDependencies:
+    typescript: "*"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 2/0c1ab7d1b85820a4ad12d25f18e6e9b68e57095412cb436266e8d0c58508892d871cd6d39512701e1117b0ad6354f0596d7f9ef9a0e630538ef3c7ff1970e0ef
   languageName: node
   linkType: hard
 

@@ -82,6 +82,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash-webpack-plugin", "virtual:c38de55971dfdfb5466771459add121f3b2dffda6453ea9165917697eb5945229183dde56927f1997c705617e64ac7f773bdea583b4493c403d49f8eea5b756d#npm:0.11.5"],
             ["luxon", "npm:1.22.0"],
             ["node-sass", "npm:4.13.1"],
+            ["pnp-webpack-plugin", "npm:1.6.4"],
             ["polished", "npm:3.4.4"],
             ["preload-webpack-plugin", "virtual:c38de55971dfdfb5466771459add121f3b2dffda6453ea9165917697eb5945229183dde56927f1997c705617e64ac7f773bdea583b4493c403d49f8eea5b756d#npm:3.0.0-beta.4"],
             ["prettier", "npm:1.19.1"],
@@ -9181,6 +9182,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash-webpack-plugin", "virtual:c38de55971dfdfb5466771459add121f3b2dffda6453ea9165917697eb5945229183dde56927f1997c705617e64ac7f773bdea583b4493c403d49f8eea5b756d#npm:0.11.5"],
             ["luxon", "npm:1.22.0"],
             ["node-sass", "npm:4.13.1"],
+            ["pnp-webpack-plugin", "npm:1.6.4"],
             ["polished", "npm:3.4.4"],
             ["preload-webpack-plugin", "virtual:c38de55971dfdfb5466771459add121f3b2dffda6453ea9165917697eb5945229183dde56927f1997c705617e64ac7f773bdea583b4493c403d49f8eea5b756d#npm:3.0.0-beta.4"],
             ["prettier", "npm:1.19.1"],
@@ -11632,6 +11634,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "../../.yarn/berry/cache/pn-npm-1.1.0-442ee166b2-2.zip/node_modules/pn/",
           "packageDependencies": [
             ["pn", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["pnp-webpack-plugin", [
+        ["npm:1.6.4", {
+          "packageLocation": "../../.yarn/berry/cache/pnp-webpack-plugin-npm-1.6.4-c497046afc-2.zip/node_modules/pnp-webpack-plugin/",
+          "packageDependencies": [
+            ["pnp-webpack-plugin", "npm:1.6.4"],
+            ["ts-pnp", "virtual:c497046afcbefb679e3fe12575088ec12205b913a36c3d158b27e7cd646d448426540ab27ba98e54ddb75b1ed97de7e3ce5dc0158c9ba4e76ce942c87e5d02d8#npm:1.1.6"]
           ],
           "linkType": "HARD",
         }]
@@ -15172,6 +15184,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "packagePeers": [
             "jest"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["ts-pnp", [
+        ["virtual:c497046afcbefb679e3fe12575088ec12205b913a36c3d158b27e7cd646d448426540ab27ba98e54ddb75b1ed97de7e3ce5dc0158c9ba4e76ce942c87e5d02d8#npm:1.1.6", {
+          "packageLocation": "./.yarn/$$virtual/ts-pnp-virtual-cbd245a0f8/3/.yarn/berry/cache/ts-pnp-npm-1.1.6-cc542a3af4-2.zip/node_modules/ts-pnp/",
+          "packageDependencies": [
+            ["ts-pnp", "virtual:c497046afcbefb679e3fe12575088ec12205b913a36c3d158b27e7cd646d448426540ab27ba98e54ddb75b1ed97de7e3ce5dc0158c9ba4e76ce942c87e5d02d8#npm:1.1.6"],
+            ["typescript", null]
+          ],
+          "packagePeers": [
+            "typescript"
           ],
           "linkType": "HARD",
         }]
