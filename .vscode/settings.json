@@ -3,5 +3,6 @@
     ".idea": true,
     ".yarn": true
   },
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": ".vscode/pnpify/typescript/lib",
+  "prettier.prettierPath": ".vscode/pnpify/prettier/index.js"
 }
