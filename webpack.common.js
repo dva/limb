@@ -5,6 +5,7 @@ const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackBar = require('webpackbar')
 const PreloadWebpackPlugin = require('preload-webpack-plugin')
+const PnpWebpackPlugin = require('pnp-webpack-plugin')
 
 module.exports = {
   entry: ['./src/index.tsx', './src/styles/index.scss'],
@@ -26,10 +27,17 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'react-dom': '@hot-loader/react-dom',
-      '@utils': path.resolve(__dirname, 'src/utils')
+      'react-dom': '@hot-loader/react-dom'
     },
-    extensions: ['.js', '.ts', '.tsx']
+    extensions: ['.js', '.ts', '.tsx'],
+    plugins: [
+      PnpWebpackPlugin,
+    ]
+  },
+  resolveLoader: {
+    plugins: [
+      PnpWebpackPlugin.moduleLoader(module)
+    ]
   },
   output: {
     filename: '[name].[hash].js',
