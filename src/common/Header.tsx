@@ -19,8 +19,4 @@ const menuItem = (item: IItem, idx: number) => (
   </li>
 );
 
-export default () => (
-  <ul>
-    {menu.map((item, idx) => menuItem(item, idx))}
-  </ul>
-);
+export default () => <ul>{menu.map((item, idx) => menuItem(item, idx))}</ul>;

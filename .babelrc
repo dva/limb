@@ -1,7 +1,17 @@
 {
   "presets": [
-    "@babel/modules",
-    ["@babel/preset-typescript", {
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "browsers": [
+            "last 2 Chrome versions",
+            "last 2 Firefox versions"
+          ]
+        }
+      }
+    ],
+    ["@babel/typescript", {
       "allowDeclareFields": true
     }],
     ["@babel/react", {

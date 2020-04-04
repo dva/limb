@@ -8,8 +8,6 @@ const Styled = styled.div`
 
 export default () => (
   <div>
-    <Styled>
-      Lorem ipsum dolor sit amet
-    </Styled>
+    <Styled>Lorem ipsum dolor sit amet</Styled>
   </div>
 );
