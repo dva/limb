@@ -12,5 +12,10 @@ module.exports = {
     '^@utils$': '<rootDir>/utils/'
   },
   setupFilesAfterEnv: ['<rootDir>/../enzyme.config.js'],
-  snapshotSerializers: ['enzyme-to-json/serializer']
+  snapshotSerializers: ['enzyme-to-json/serializer'],
+  globals: {
+    'ts-jest': {
+      babelConfig: true
+    }
+  }
 }
