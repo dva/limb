@@ -1,11 +1,14 @@
 {
   "recommendations": [
     "chenxsan.vscode-standardjs",
+    "dbaeumer.vscode-eslint",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
     "jpoissonnier.vscode-styled-components",
-    "ms-vscode.vscode-typescript-tslint-plugin",
     "stylelint.vscode-stylelint"
   ],
-  "unwantedRecommendations": ["eg2.tslint"]
+  "unwantedRecommendations": [
+    "eg2.tslint",
+    "ms-vscode.vscode-typescript-tslint-plugin"
+  ]
 }
