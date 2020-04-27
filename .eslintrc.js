@@ -16,5 +16,8 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:eslint-comments/recommended',
     'prettier/@typescript-eslint'
-  ]
+  ],
+  rules: {
+    '@typescript-eslint/explicit-function-return-type': 'off'
+  }
 }
