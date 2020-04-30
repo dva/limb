@@ -24,5 +24,10 @@ module.exports = {
       { prefixWithI: 'always' }
     ],
     'react/prop-types': 'off'
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
   }
 }
