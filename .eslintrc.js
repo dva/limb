@@ -18,6 +18,10 @@ module.exports = {
     'prettier/@typescript-eslint'
   ],
   rules: {
-    '@typescript-eslint/explicit-function-return-type': 'off'
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/interface-name-prefix': [
+      'error',
+      { prefixWithI: 'always' }
+    ]
   }
 }
