@@ -6,8 +6,10 @@ const Styled = styled.div`
   ${ellipsis('100px')};
 `;
 
-export default () => (
+const About = () => (
   <div>
     <Styled>Lorem ipsum dolor sit amet</Styled>
   </div>
 );
+
+export default About;
