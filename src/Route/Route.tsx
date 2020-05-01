@@ -8,7 +8,7 @@ import Hooks from '../component/Hooks';
 import Header from '../common/Header';
 import NotFound from '../common/NotFound';
 
-export default () => (
+const Routes = () => (
   <Router>
     <Fragment>
       <Header />
@@ -21,3 +21,5 @@ export default () => (
     </Fragment>
   </Router>
 );
+
+export default Routes;
