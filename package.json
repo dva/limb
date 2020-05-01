@@ -10,7 +10,7 @@
     "build:check": "yarn type-check && yarn lint && yarn test",
     "build": "webpack --config webpack.prod.js",
     "lint:css:fix": "yarn lint:css --fix",
-    "lint:css": "stylelint 'src/**/*.scss'",
+    "lint:css": "stylelint 'src/**/*.{ts,tsx,scss}'",
     "lint:fix": "yarn lint:ts:fix && yarn lint:js:fix && yarn lint:css:fix",
     "lint:js:fix": "yarn lint:js --fix",
     "lint:js": "standard '**/*.js'",

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ellipsis } from 'polished';
 
 const Styled = styled.div`
-  ${ellipsis('100px')};
+  ${ellipsis('100px')}
 `;
 
 const About = () => (
