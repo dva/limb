@@ -3,5 +3,6 @@
     ".idea": true,
     ".yarn": true
   },
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "standard.validate": ["javascript"]
 }
