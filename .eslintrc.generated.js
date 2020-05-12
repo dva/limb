@@ -6,7 +6,7 @@ It represents the closest reasonable ESLint configuration to this
 project's original TSLint configuration.
 
 We recommend eventually switching this configuration to extend from
-the recommended rulesets in typescript-eslint. 
+the recommended rulesets in typescript-eslint.
 https://github.com/typescript-eslint/tslint-to-eslint-config/blob/master/docs/FAQs.md
 
 Happy linting! 💖
@@ -17,10 +17,7 @@ module.exports = {
     es6: true,
     node: true
   },
-  extends: [
-    'plugin:eslint-config-prettier',
-    'plugin:eslint-config-prettier/@typescript-eslint'
-  ],
+  extends: ['prettier', 'prettier/@typescript-eslint'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: 'tsconfig.json',
@@ -63,6 +60,7 @@ module.exports = {
     ],
     '@typescript-eslint/class-name-casing': 'error',
     '@typescript-eslint/consistent-type-assertions': 'error',
+    '@typescript-eslint/dot-notation': 'error',
     '@typescript-eslint/indent': 'off',
     '@typescript-eslint/member-delimiter-style': [
       'off',
@@ -84,6 +82,7 @@ module.exports = {
     '@typescript-eslint/no-namespace': 'error',
     '@typescript-eslint/no-parameter-properties': 'off',
     '@typescript-eslint/no-this-alias': 'error',
+    '@typescript-eslint/no-unused-expressions': 'error',
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/prefer-for-of': 'error',
@@ -107,7 +106,6 @@ module.exports = {
     'comma-dangle': 'off',
     complexity: 'off',
     'constructor-super': 'error',
-    'dot-notation': 'error',
     'eol-last': 'off',
     eqeqeq: ['error', 'smart'],
     'guard-for-in': 'error',
@@ -202,7 +200,6 @@ module.exports = {
     'no-undef-init': 'error',
     'no-underscore-dangle': 'error',
     'no-unsafe-finally': 'error',
-    'no-unused-expressions': 'error',
     'no-unused-labels': 'error',
     'no-var': 'error',
     'object-shorthand': 'error',
