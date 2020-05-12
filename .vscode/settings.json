@@ -1,8 +1,11 @@
 {
   "search.exclude": {
     ".idea": true,
-    ".yarn": true
+    ".yarn": true,
+    "dist": true
   },
   "typescript.tsdk": "node_modules/typescript/lib",
-  "standard.validate": ["javascript"]
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "standard.validate": ["javascript"],
+  "npm.packageManager": "yarn"
 }
