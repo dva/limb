@@ -6,5 +6,6 @@
   },
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "standard.validate": ["javascript"]
+  "standard.validate": ["javascript"],
+  "npm.packageManager": "yarn"
 }
